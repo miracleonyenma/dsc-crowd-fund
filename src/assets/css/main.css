@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply text-slate-800;
+}
+
+.cta {
+	@apply font-bold text-purple-100 bg-purple-600 p-2 px-4 rounded-lg;
+}
+
+section {
+	@apply p-4;
+}
+
+section > .wrapper {
+	@apply w-full max-w-6xl mx-auto;
+}
+
+.img-cont img {
+	@apply w-full h-auto;
+}
+
+.floating-img {
+	@apply relative;
+	animation: floating-img 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floating-img {
+	0% {
+		transform: translateY(-4rem) scale(1.15) rotate(-12deg);
+	}
+	100% {
+		transform: translateY(-3rem) scale(1.15) rotate(-12deg);
+	}
+}
